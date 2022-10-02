@@ -15,9 +15,10 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         val data = ArrayList<ItemsViewModel>()
 
-        data.add(ItemsViewModel(R.drawable.ic_launcher_foreground,"Memes"))
-        data.add(ItemsViewModel(R.drawable.ic_launcher_foreground,"News"))
-        data.add(ItemsViewModel(R.drawable.ic_launcher_foreground,"Music"))
+        data.add(ItemsViewModel(R.drawable.meme,"Memes"))
+        data.add(ItemsViewModel(R.drawable.news,"News"))
+        data.add(ItemsViewModel(R.drawable.music,"Music"))
+
         //Pass arraylist to adapter
         val adapter = CustomAdapter(data);
 
